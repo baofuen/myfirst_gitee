@@ -18,7 +18,23 @@ update.txt
 	3 git add .	添加文件夹下所有文件到暂存区 git add .
 	4 git commit -m 'decriptions'	提交
 	5 git remote add gitee git@gitee.com:baofuen/myfirst.git	关联远程仓库
-	
+
+
+pull是的错误
+请输入提交消息来解释为什么这种合并是必要的
+一：git中Please enter a commit message to explain why this merge is necessary.
+	1.按键盘字母 i 进入insert模式
+
+	2.修改最上面那行黄色合并信息,可以不修改
+
+	3.按键盘左上角"Esc"
+
+	4.输入":wq",注意是冒号+wq,按回车键即可
+
+二：先pull，因为两个仓库不同，发现refusing to merge unrelated histories，无法pull
+	最新的版本需要添加--allow-unrelated-histories
+	git pull origin master --allow-unrelated-histories
+
 
 
 
