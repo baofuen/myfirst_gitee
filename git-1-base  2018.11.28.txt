@@ -1,0 +1,61 @@
+﻿
+git使用：
+	git init    :当前目录初始化
+	git clone +地址 
+
+ mkdir learngit   ：创建一个空目录
+ cd learngit
+ pwd		：pwd命令用于显示当前目录
+	
+git init	把这个目录变成Git可以管理的仓库：
+git add readme.txt	把文件添加到仓库
+
+版本信息：
+commit可以一次提交很多文件，所以你可以多次add不同的文件，
+可以一次性把暂存区的所有修改提交到分支
+git commit -m "wrote a readme file" 把文件提交到仓库，-m后面输入的是本次提交的说明
+git status	掌握仓库当前的状态
+git diff  readme.txt	查看difference  readme.txt
+git log 	可以查看提交历史
+git log --pretty=oneline
+git reset --hard HEAD^	把当前版本回退到上一个版
+cat readme.txt	显示当前文件内容
+git reset --hard 1094a	指定回到未来的某个版本
+git reflog	查看命令历史，以便确定要回到未来的哪个版本。
+
+撤销修改操作：
+1 git reset HEAD <file>	可以把暂存区的修改撤销掉（unstage），重新放回工作区
+2 git checkout -- file	可以丢弃工作区的修改：
+	一种是readme.txt自修改后还没有被放到暂存区，现在，撤销修改就回到和版本库一模一样的状态；
+	一种是readme.txt已经添加到暂存区后，又作了修改，现在，撤销修改就回到添加到暂存区后的状态。
+	就是让这个文件回到最近一次git commit或git add时的状态。
+
+
+
+删除文件操作：
+1 rm test.txt	删除了文件
+2 git rm		删掉，并且
+3 git commit
+或者：git checkout -- test.txt	把误删的文件恢复到最新版本
+
+
+远程仓库：
+1 ssh-keygen -t rsa -C "youremail@example.com"	创建SSH Key
+2 登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+3 点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+4 git remote add origin git@github.com:baofuen/baobao.git 	SSH连接的不需要密码
+git remote add origin https://github.com/baofuen/baobao.git	HTTPS连接的的远程库，需要密码
+	报错：fatal: remote origin already exists.
+	操作： git remote rm origin
+6 git push origin master
+	报错! [rejected]        master -> master (non-fast-forward)
+	error: failed to push some refs to 'https://github.com/baofuen/baobao.git'
+	操作：git pull --rebase origin master
+		
+7 git push origin master 或者  git push -u origin master
+	git push origin master:只要本地作了提交，就可以通过命令把本地master分支的最新修改推送至GitHub
+	git push命令，实际上是把当前分支master推送到远程
+	-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+克隆：
+git clone  + SSH地址  / +HTTPS地址
+  

@@ -1,0 +1,35 @@
+﻿tag：标签也是版本库的一个快照
+	
+1 创建标签：
+创建带有说明的标签，用-a指定标签名，-m指定说明文字：
+	git tag -a v0.1 -m "version 0.1 released" 1094adb
+
+	首先，切换到需要打标签的分支上：
+		git branch
+		git checkout master
+	敲命令git tag <name>就可以打一个新标签：
+		git tag v1.0
+		git tag
+
+2 给之前的版本打标签
+	找到历史提交的commit id
+		git log --pretty=oneline --abbrev-commit
+	对某一个提交id打标签：
+		git tag v0.9 f52c633
+3 查看标签信息：
+	git show <tagname>
+
+4 删除标签：
+	git tag -d v0.1
+
+5 某个标签到远程
+	git push origin <tagname>
+一次性推送全部尚未推送到远程的本地标签
+	 git push origin --tags
+
+6 如果标签已经推送到远程，要删除远程标签就麻烦：
+	先从本地删除
+		git tag -d v0.9
+	远程删除
+		git push origin :refs/tags/v0.9
+	

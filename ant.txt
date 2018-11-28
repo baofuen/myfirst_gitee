@@ -1,0 +1,33 @@
+start
+
+1
+	npm install antd-init -g
+2
+	mkdir antd-demo && cd antd-demo
+ 	antd-init
+or 2:	
+	mkdir antd-demo && cd antd-demo
+	yarn create umi
+	
+
+3 :http://127.0.0.1:8000
+	npm start
+	npm run build
+
+
+Real project with umi and dva
+
+
+1
+	npm install -g create-umi && create-umi
+
+2	
+	Select antd and dva and press Enter to confirm.
+3	
+	yarn
+	yarn start
+4	
+	Open http://localhost:8000 
+5Create Routes:	
+	yarn global add npx
+	npx umi g page products

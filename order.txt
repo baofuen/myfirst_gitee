@@ -1,0 +1,41 @@
+npm cache clean -f
+1
+cnpm install typings -g
+
+cnpm install @types/angular  -g 
+cnpm install @types/node  -g
+cnpm install @types/jquery  -g
+cnpm install weinre -g 
+
+typings install dt~mocha --global --save
+
+typings install env~atom --global --save
+typings install npm~bluebird --save
+
+
+npm run start
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+npm install -g cnpm --registry=https://registry.npm.taobao.org
+
+npm install ng-zorro-antd --save
+
+npm install express -g
+
+1
+ng new newName
+
+2
+cnpm install ng-zorro-antd --save
+ng add ng-zorro-antd
+
+3
+ng serve --port 0 --open
+
+4
+ng build --prod
+
+ng add ng-zorro-antd --theme
+
+ng g ng-zorro-antd:form-normal-login -p app --styleext=less --name=login
+

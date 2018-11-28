@@ -1,0 +1,17 @@
+GitHubÅF
+	https://github.com/baobaoProject
+	
+
+	projectName:baobaoProject
+	username:baofuen 
+	passwordÅFbfe19180720WYZ
+
+
+gitee:
+	username:1272952103@qq.com
+	password:bfe19180720WYZ
+
+163@
+	username:baobao1272952103@163.com
+	password:userd
+

@@ -1,0 +1,20 @@
+﻿ng generate module app-routing --flat --module=app
+
+：注释：
+--flat 把这个文件放进了 src/app 中，而不是单独的目录中。
+--module=app 告诉 CLI 把它注册到 AppModule 的 imports 数组中。
+
+使用 ng g m sales --routing 
+则将会生成sales和 sales-routing 两个module.
+
+
+国际化：
+	(1)npm 安装 ngx-translate 模块
+npm install  ng2-translate            --save
+npm install @ngx-translate/core --save
+npm install @ngx-translate/http-loader --save
+
+
+
+small
+	npm install --save ng2-smart-table

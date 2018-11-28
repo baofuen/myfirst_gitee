@@ -1,0 +1,12 @@
+1 版本：6.1.1以下
+2不能用cnpm
+3 可以用yarn或者npm
+
+4 
+npm i --save less@~2.7.0
+
+"ng-zorro-antd": "^1.7.1",
+"@angular/cli": "~6.1.1",
+
+
+ng g c   dropdown  

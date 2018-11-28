@@ -1,0 +1,25 @@
+﻿
+pull：远程库想本地库推送
+push：本地库向远程库推送
+
+一个本地库只能推送一个远程库
+git push  远程库  本地分支
+git pull  远程库  本地分支
+
+
+2推送整个文件夹下的所有文件到远程库：
+	1 git init	其变成git可以管理的仓库
+	2 touch .gitignore	在项目根目录下创建 .gitignore 文件
+忽略本地的文件或文件夹不被提交到github
+node_modules/ 
+update.txt 
+则可以忽略目录下node_modules 文件夹及updata.txt 文件.
+
+	3 git add .	添加文件夹下所有文件到暂存区 git add .
+	4 git commit -m 'decriptions'	提交
+	5 git remote add gitee git@gitee.com:baofuen/myfirst.git	关联远程仓库
+	
+
+
+
+

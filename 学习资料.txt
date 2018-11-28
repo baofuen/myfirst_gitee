@@ -1,0 +1,59 @@
+1安装Node.js
+2命令行 ?行 npm install -g typescript  npm -v
+3安装 npm install -g @angular/cli     ng -v
+4 ?建?目 ng new ?目名字
+前端框架：
+TypeJascript
+AngularJs
+Angular
+	Goole??
+React：速度快
+Vue：?便，国内框架，?活，性能高，尺寸小
+	个人主?的，只?注web
+FLUX
+
+
+Angular：
+指令  通?操作后台数据来操作前台?面
+	数据?定，差?表?式：{{a}}），*ngFor="let a of as":（循?后台某个数?的数据，自?将模板和数据?定
+	属性?定(将html用[]括起来，??的?是后台的属性?，如果是?式，用class.引用)：[src]=
+	?入属性，在?件中用@Input表示?属性??入属性 ：2-10
+	事件?定，使用(click)表示
+
+
+路由：
+	Spa：single page,???用
+	Routes :路由配置，保存着?个url???个?件，以及在?个RouterOutLet中展示
+	RouterOutlet：路由内容呈?位置的占位符
+	Router：??在?行??行路由?象，
+	RouterLink:在Html中声明路由?航的命令
+	ActivatedRoute：当前激活的路有?象
+	
+	参数??：
+		1在??参数中??数据，使用？name=2      =>ActivatedRoute.queryParams[name]
+		2在路由路径中??数据{/:id} =>/1  =>ActivatedRoute.params[id]
+		3在路由路径中??数据：{path:/product,component:P,data:[{isProd:true}]}  =>ActivatedRoute.data[0][isProd]
+	参数快照：snapshot
+	参数??：subscribe
+
+	重定向路由：redirect
+	子路由：children
+	?助路由：
+	路由守?：
+		登?守? CanActivate:?理某路由情况，是一个接口
+		退出守? CanDeactivate<>:接口，需要??接口
+	
+	@Injectable(装?器)
+	resolve子守?
+
+4依?注入dependency injection：是控制控制反?的手段
+ 控制反?Inversion of Control ：将依?的控制器从代?的内部反?到代?的外部
+	
+	注入器：只能在?造造函数参数中注入
+	提供器providers：[]
+	
+5??式?程
+
+6管道	
+		
+		

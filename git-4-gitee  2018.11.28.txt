@@ -1,0 +1,18 @@
+﻿码云：
+使用码云和使用GitHub类似，我们在码云上注册账号并登录后，需要先上传自己的SSH公钥。选择右上角用户头像 -> 菜单“修改资料”，然后选择“SSH公钥”，填写一个便于识别的标题，
+然后把用户主目录下的.ssh/id_rsa.pub文件的内容粘贴进去
+
+地址：
+	https://gitee.com/baofuen/myfirst
+	
+我们在本地库上使用命令git remote add把它和码云的远程库关联：
+	git remote add origin git@gitee.com:baofuen/myfirst.git
+
+git remote -v	
+git remote rm origin
+
+如何关联两个远程库：git和gitee
+1 删除原有的远程库：	git remote rm origin
+2 添加gitee库为gitee	git remote add gitee git@gitee.com:baofuen/myfirst.git
+3 添加github库为github	git remote add github git@github.com:baofuen/myfirst.git
+4 查看所有的远程库	git remote -v

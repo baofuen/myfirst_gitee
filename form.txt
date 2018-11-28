@@ -1,0 +1,37 @@
+pattern：属性后面可以跟正?表?式
+min：后面跟数字，最小?
+max：
+
+model form：
+	FormGroup:	ngForm:表示一个angular  form   ，NoNgForm：angular dont manage
+	FormControl:	ngModel： use  #username="ngModel"   ->  {{username.value}}
+	FormGroup:	NgModelGroup:
+
+
+order：ng g directive  directiveName
+
+	
+
+使用#name   声明one variable，use {{name}} get value
+
+
+respone form:
+	
+FormBuilder：.group   
+	Validators:
+	FormControl:
+	FormGroup:  
+		attr：formGroupName,formControlName	
+		can use FormControl
+	FormArray: 
+		attr:formArrayName,with ngFor link
+		can use FormControl
+
+state attr:
+	untouched: no get touch
+	touched:
+	pristine: value has changed
+	dirty： value has no changed
+	pending：Asy
+
+	

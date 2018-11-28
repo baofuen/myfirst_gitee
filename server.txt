@@ -1,0 +1,24 @@
+init:	 npm init  -y
+1 ser Nodejs  CreateF
+	npm i @types/node --save
+	tsconfig.json 
+	run: node  hell|_Sever.js
+
+	npm install express --save
+	npm install @types/express --save
+	
+
+npm start run
+
+
+2 use Express  create restful  http serve
+
+
+
+3 Http communication:
+
+
+4 webSocket communication:
+	npm insatll ws --save
+	npm install @types/ws --save-dev
+	
